@@ -47,6 +47,7 @@ def Generate_Coupon(n):
         f.write(codes[i]+"\t")
         if j%10==0:
             f.write("\n")
+    f.close()
     return codes
 
 def Check_Coupon(codes):
@@ -70,5 +71,4 @@ if __name__ == "__main__":
     Check_Coupon(result)
     for i in range(len(result)):
         print(result[i])
-    
     
